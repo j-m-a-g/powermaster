@@ -14,19 +14,36 @@
 
 <body>
 
-	<header>
-		<img style="width: 48px; height: 48px;" alt="PowerMaster Logo" src="images/powermaster_logo.png" />
-		<p style="margin-left: 10px;">PowerMaster</p>
+	<header class="powermasterHeader">
+		<img style="width: 48px; height: 48px; grid-column-start: 1;" alt="PowerMaster Logo" src="images/powermaster_logo.png" />
+		<p style="margin-left: 10px; grid-column-start: 2;">PowerMaster</p>
+		<a href="#featuresA" style="font-size: 14px; color: #A96424; margin-left: 50px; grid-column-start: 3; margin-top: 18px;">FEATURES</a>
 		<a class="powermasterDownloadA" href="https://sites.google.com/view/maghamez/home">Download for Windows</a>
 	</header>
 
-	<img class="powermasterLandingPageImg" src="images/get_started_with_powermaster.png"/>
-	
+	<img class="powermasterLandingPageImg" src="images/get_started_with_powermaster.png" />
+
 	<div class="centeredDiv">
-		<a class="powermasterSecondaryDownloadA" href="someone">Download for x86</a>
-		<a class="powermasterSecondaryDownloadA" href="someone">Download for x64</a>
-		<a class="powermasterSecondaryDownloadA" href="someone">Download for Arm64</a>
+		<a class="powermasterSecondaryDownloadA" href="someone" style="background-color: #DA954B; grid-column-start: 1; margin-left: 100px;">Download for x86</a>
+		<a class="powermasterSecondaryDownloadA" href="someone" style="grid-column-start: 2;">Download for x64</a>
+		<a class="powermasterSecondaryDownloadA" href="someone" style="background-color: #714216; grid-column-start: 3; margin-right: 100px;">Download for Arm64</a>
 	</div>
+
+	<div style="opacity: 90%; margin-top: 10px; border-radius: 10px; padding: 10px; background-color: #F9DB78; ">
+		<a id="featuresA"><h3 style="line-height: 1px; color: black; margin-left: 12px; margin-right: 12px;">Features</h3></a>
+		<ul style="color: black;">
+			<li>Switch between the Power Saver and High Performance power modes with a click of a button</li>
+			<li>Enable the option to keep PowerMaster minimized in your system tray for easy access and quick actions</li>
+			<li>Let PowerMaster automatically select the Power Saver power mode whenever you are on battery power</li>
+			<li>Monitor battery-relevant information like its overall status, time for full charge and discharge, and whether your laptop is plugged in or not</li>
+			<li>View PowerMaster's included Power Widget for efficient and simplified access to battery and power information</li>
+			<li>Select between light and dark mode for the app to display</li>
+		</ul>
+	</div>
+
+	<footer>
+		<p>2024 J. Maghamez</p>
+	</footer>
 
 	<style type="text/css">
 
@@ -41,8 +58,16 @@
 			justify-content: flex-start;
 		}
 
+		footer {
+			font-size: 13px;
+		}
+
 		a {
 			text-decoration: none;
+		}
+
+		.powermasterHeader {
+			display: grid;
 		}
 
 		.powermasterDownloadA {
@@ -71,17 +96,16 @@
 		}
 
 		.powermasterLandingPageImg {
-			border-color: black;
-			border: thin;
-			width: auto;
-			height: 540px;
+			width: 100%;
+			height: 100%;
 		}
 
 		.centeredDiv {
 			margin: auto;
-			width: 56%;
+			width: 100%;
+			display: grid;
+			column-gap: 5px;
 		}
-
 	</style>
 
 </body>
