@@ -1,113 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PowerMaster</title>
 
-	<link rel="icon" href="images/powermaster_logo.ico" />
+	<head>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PowerMaster</title>
 
-<body>
+		<link rel="icon" href="images/powermaster_logo.ico" />
 
-	<header class="powermasterHeader">
-		<img style="width: 48px; height: 48px; grid-column-start: 1;" alt="PowerMaster Logo" src="images/powermaster_logo.png" />
-		<p style="margin-left: 10px; grid-column-start: 2;">PowerMaster</p>
-		<a href="#featuresA" style="font-size: 14px; color: #A96424; margin-left: 50px; grid-column-start: 3; margin-top: 18px;">FEATURES</a>
-		<a class="powermasterDownloadA" href="https://sites.google.com/view/maghamez/home">Download for Windows</a>
-	</header>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
-	<img class="powermasterLandingPageImg" src="images/get_started_with_powermaster.png" />
+		<style type="text/css">
 
-	<div class="centeredDiv">
-		<a class="powermasterSecondaryDownloadA" href="someone" style="background-color: #DA954B; grid-column-start: 1; margin-left: 100px;">Download for x86</a>
-		<a class="powermasterSecondaryDownloadA" href="someone" style="grid-column-start: 2;">Download for x64</a>
-		<a class="powermasterSecondaryDownloadA" href="someone" style="background-color: #714216; grid-column-start: 3; margin-right: 100px;">Download for Arm64</a>
-	</div>
+			body {
+				background: #EAC452;
+				font-family: "Varela Round", sans-serif;
+			}
 
-	<div style="opacity: 90%; margin-top: 10px; border-radius: 10px; padding: 10px; background-color: #F9DB78; ">
-		<a id="featuresA"><h3 style="line-height: 1px; color: black; margin-left: 12px; margin-right: 12px;">Features</h3></a>
-		<ul style="color: black;">
-			<li>Switch between the Power Saver and High Performance power modes with a click of a button</li>
-			<li>Enable the option to keep PowerMaster minimized in your system tray for easy access and quick actions</li>
-			<li>Let PowerMaster automatically select the Power Saver power mode whenever you are on battery power</li>
-			<li>Monitor battery-relevant information like its overall status, time for full charge and discharge, and whether your laptop is plugged in or not</li>
-			<li>View PowerMaster's included Power Widget for efficient and simplified access to battery and power information</li>
-			<li>Select between light and dark mode for the app to display</li>
-		</ul>
-	</div>
+			header {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
 
-	<footer>
-		<p>2024 J. Maghamez</p>
-	</footer>
+			footer {
+				font-size: 13px;
+				display: flex;
+			}
 
-	<style type="text/css">
+			a {
+				text-decoration: none;
+			}
 
-		body {
-			background: #EAC452;
-			font-family: "Varela Round", sans-serif;
-		}
+			.powermasterHeader {
+				display: flex;
+			}
 
-		header {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-		}
+			.powermasterDownloadDiv {
+				display: flex;
+				margin-top: auto;
+				margin-bottom: auto;
+				margin-left: 50px;
+				background-color: #A96424;
+				border-radius: 10px;
+			}
+				.powermasterDownloadDiv:hover {
+					background-color: #714216;
+				}
 
-		footer {
-			font-size: 13px;
-		}
+			.powermasterDownloadA {
+				font-size: 16px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				padding-right: 20px;
+				color: white;
+				padding-left: 20px;
+				border-radius: 10px;
+			}
+				.powermasterDownloadA:hover {
+					background-color: #714216;
+				}
 
-		a {
-			text-decoration: none;
-		}
+			.powermasterX86DownloadA {
+				background-color: #DA954B;
+				display: flex;
+				grid-column-start: 1;
+				font-size: 16px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				padding-right: 20px;
+				color: white;
+				padding-left: 20px;
+				border-radius: 10px;
+			}
+				.powermasterX86DownloadA:hover {
+					background-color: black;
+				}
 
-		.powermasterHeader {
-			display: grid;
-		}
+			.powermasterX64DownloadA {
+				display: flex;
+				grid-column-start: 2;
+				font-size: 16px;
+				background-color: #A96424;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				padding-right: 20px;
+				color: white;
+				padding-left: 20px;
+				border-radius: 10px;
+			}
+				.powermasterX64DownloadA:hover {
+					background-color: black;
+				}
 
-		.powermasterDownloadA {
-			position: absolute;
-			margin-right: 10px;
-			right: 0px;
-			font-size: 16px;
-			background-color: #A96424;
-			padding-bottom: 10px;
-			padding-top: 10px;
-			padding-right: 20px;
-			color: white;
-			padding-left: 20px;
-			border-radius: 10px;
-		}
+			.powermasterArm64DownloadA {
+				display: flex;
+				background-color: #714216;
+				grid-column-start: 3;
+				font-size: 16px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				padding-right: 20px;
+				color: white;
+				padding-left: 20px;
+				border-radius: 10px;
+			}
+				.powermasterArm64DownloadA:hover {
+					background-color: black;
+				}
 
-		.powermasterSecondaryDownloadA {
-			font-size: 16px;
-			background-color: #A96424;
-			padding-bottom: 10px;
-			padding-top: 10px;
-			padding-right: 20px;
-			color: white;
-			padding-left: 20px;
-			border-radius: 10px;
-		}
+			.powermasterLandingPageImg {
+				width: 100%;
+				height: 100%;
+				border-color: black;
+				border: solid;
+				box-shadow: 10px 10px;
+				border-radius: 10px;
+			}
 
-		.powermasterLandingPageImg {
-			width: 100%;
-			height: 100%;
-		}
+			.centeredDiv {
+				margin: auto;
+				width: 100%;
+				display: grid;
+				column-gap: 5px;
+			}
 
-		.centeredDiv {
-			margin: auto;
-			width: 100%;
-			display: grid;
-			column-gap: 5px;
-		}
-	</style>
+			.screenshotsDiv {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				display: grid;
+				row-gap: 5px;
+				padding-top: 20px;
+				border-radius: 10px;
+				padding-bottom: 20px;
+				width: 100%;
+				background-color: #A96424;
+				column-gap: 0px;
+			}
 
-</body>
+			.powermasterScreenshotsImg {
+				width: 95%;
+				height: 100%;
+				border-radius: 10px;
+			}
+
+			.powermasterFeaturesA {
+				font-size: 14px;
+				color: #A96424;
+				margin-left: 50px;
+				grid-column-start: 3;
+				margin-top: 18px;
+			}
+				.powermasterFeaturesA:hover {
+					color: black;
+				}
+
+			.powermasterMSIXP {
+				margin-top: 0px;
+				margin-bottom: 00px;
+				margin-left: 5px;
+				opacity: 75%;
+				font-size: 12px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header class="powermasterHeader">
+
+			<img style="width: 48px; height: 48px;" alt="PowerMaster Logo" src="images/powermaster_logo.png" />
+			<p style="margin-left: 10px;">PowerMaster</p>
+			<a href="#featuresA" class="powermasterFeaturesA">FEATURES</a>
+			<a href="#downloadOptionsA" class="powermasterFeaturesA">INSTALL OPTIONS</a>
+			<div class="powermasterDownloadDiv">
+
+				<img src="images/download_1000dp_FFFFFF.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; margin-left: 10px;" />
+				<a class="powermasterDownloadA" href="https://sites.google.com/view/maghamez/home">Download for Windows</a>
+			
+			</div>
+
+		</header>
+		<img class="powermasterLandingPageImg" src="images/get_started_with_powermaster.png" style="margin-top: 10px;" />
+		<div style="margin-top: 20px; border-radius: 10px; padding-left: 30px; padding-right: 30px; padding-top: 1px; padding-bottom: 15px; background-color: #F9DB78; ">
+
+			<p style="text-align: center; font-size: 20px; margin-left: auto; margin-right: auto; margin-bottom: auto;">
+				Can't find the previously-included power plans in your computer's
+				control panel? Or do you just want to squeeze the
+				most power efficiency or performance out of your device? PowerMaster
+				is the app that solves this with an easy-to-use
+				UI that allows you to quickly change your power mode
+				with just a couple of clicks.
+			</p>
+
+		</div>
+		<div class="screenshotsDiv">
+
+			<img class="powermasterScreenshotsImg" src="images/can’t_find_something.png" style="grid-column-start: 1; grid-row-start: 1; margin-left: 20px;" />
+			<img class="powermasterScreenshotsImg" src="images/don’t_miss_a_beat.png" style="grid-column-start: 2; grid-row-start: 1;" />
+			<img class="powermasterScreenshotsImg" src="images/dark_mode.png" s style="grid-column-start: 1; grid-row-start: 2; margin-left: 20px;" />
+			<img class="powermasterScreenshotsImg" src="images/want_to_know_more_about_your_battery.png" s style="grid-column-start: 2; grid-row-start: 2; " />
+			<img class="powermasterScreenshotsImg" src="images/using_a_desktop.png" s style="grid-column-start: 1; grid-row-start: 3; margin-left: 20px;" />
+
+		</div>
+		<a id="downloadOptionsA"><div class="centeredDiv">
+
+			<a class="powermasterX86DownloadA" href="someone">Download for x86<p class="powermasterMSIXP">v24.8.4</p></a>
+			<a class="powermasterX64DownloadA" href="someone">Download for x64<p class="powermasterMSIXP">v24.8.4</p></a>
+			<a class="powermasterArm64DownloadA" href="someone">Download for Arm64<p class="powermasterMSIXP">v24.8.4</p></a>
+
+		</div></a>
+		<div style="margin-top: 10px; border-radius: 10px; padding: 10px; background-color: #F9DB78;">
+
+			<a id="featuresA"><h3 style="line-height: 1px; color: black; margin-left: 12px; margin-right: 12px;">Features</h3></a>
+			<ul style="color: black;">
+				<li>Switch between the Power Saver and High Performance power modes with a click of a button.</li>
+				<li>Enable the option to keep PowerMaster minimized in your system tray for easy access and quick actions.</li>
+				<li>Let PowerMaster automatically select the Power Saver power mode whenever you are on battery power.</li>
+				<li>Monitor battery-relevant information like its overall status, time for full charge and discharge, and whether your laptop is plugged in or not.</li>
+				<li>View PowerMaster's included Power Widget for efficient and simplified access to battery and power information.</li>
+				<li>Select between light and dark mode for the app to display.</li>
+			</ul>
+
+		</div>
+		<footer>
+
+			<p>2024 J. Maghamez</p>
+			<a class="powermasterFeaturesA" style="margin-top: 12px; margin-left: 10px;" href="https://j-m-a-g.github.io">GitHub</a>
+
+		</footer>
+
+	</body>
 
 </html>
