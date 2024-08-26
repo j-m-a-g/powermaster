@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PowerMaster</title>
 
+	<link rel="icon" href="images/powermaster_logo.ico" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -14,9 +16,17 @@
 
 	<header>
 		<img style="width: 48px; height: 48px;" alt="PowerMaster Logo" src="images/powermaster_logo.png" />
-		<p style="">PowerMaster</p>
-		<a href="https://sites.google.com/view/maghamez/home">maghamez.com</a>
+		<p style="margin-left: 10px;">PowerMaster</p>
+		<a class="powermasterDownloadA" href="https://sites.google.com/view/maghamez/home">Download for Windows</a>
 	</header>
+
+	<img class="powermasterLandingPageImg" src="images/get_started_with_powermaster.png"/>
+	
+	<div class="centeredDiv">
+		<a class="powermasterSecondaryDownloadA" href="someone">Download for x86</a>
+		<a class="powermasterSecondaryDownloadA" href="someone">Download for x64</a>
+		<a class="powermasterSecondaryDownloadA" href="someone">Download for Arm64</a>
+	</div>
 
 	<style type="text/css">
 
@@ -29,6 +39,47 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.powermasterDownloadA {
+			position: absolute;
+			margin-right: 10px;
+			right: 0px;
+			font-size: 16px;
+			background-color: #A96424;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-right: 20px;
+			color: white;
+			padding-left: 20px;
+			border-radius: 10px;
+		}
+
+		.powermasterSecondaryDownloadA {
+			font-size: 16px;
+			background-color: #A96424;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-right: 20px;
+			color: white;
+			padding-left: 20px;
+			border-radius: 10px;
+		}
+
+		.powermasterLandingPageImg {
+			border-color: black;
+			border: thin;
+			width: auto;
+			height: 540px;
+		}
+
+		.centeredDiv {
+			margin: auto;
+			width: 56%;
 		}
 
 	</style>
