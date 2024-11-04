@@ -1,0 +1,211 @@
+body {
+    background: #EAC452;
+    font-family: "Varela Round", sans-serif;
+}
+
+header {
+    display: Flex;
+    flex-direction: Row;
+    justify-content: Flex-start;
+}
+
+footer {
+    font-size: 13px;
+    display: Flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.powermasterHeader {
+    display: Flex;
+}
+
+.powermasterDownloadDiv {
+    display: Flex;
+    margin-top: Auto;
+    margin-bottom: Auto;
+    margin-left: 50px;
+    background-color: #A96424;
+    border-radius: 10px;
+}
+    .powermasterDownloadDiv:hover {
+        background-color: #714216;
+    }
+
+.powermasterDownloadA {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: white;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterDownloadA:hover {
+        background-color: #714216;
+    }
+
+.powermasterX86DownloadA {
+    background-color: Transparent;
+    display: Flex;
+    grid-column-start: 1;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterX86DownloadA:hover {
+        text-decoration-line: Underline;
+    }
+
+.powermasterX86DownloadDiv {
+    background-color: #DA954B;
+    grid-column-start: 1;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterX86DownloadDiv:hover {
+        background-color: Black;
+    }
+
+.powermasterX64DownloadA {
+    display: Flex;
+    grid-column-start: 2;
+    font-size: 16px;
+    background-color: Transparent;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterX64DownloadA:hover {
+        text-decoration-line: Underline;
+    }
+
+.powermasterX64DownloadDiv {
+    grid-column-start: 2;
+    font-size: 16px;
+    background-color: #A96424;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterX64DownloadDiv:hover {
+        background-color: Black;
+    }
+
+.powermasterArm64DownloadA {
+    display: Flex;
+    background-color: Transparent;
+    grid-column-start: 3;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterArm64DownloadA:hover {
+        text-decoration-line: Underline;
+    }
+
+.powermasterArm64DownloadDiv {
+    background-color: #714216;
+    grid-column-start: 3;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: White;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+    .powermasterArm64DownloadDiv:hover {
+        background-color: Black;
+    }
+
+.powermasterLandingPageImg {
+    width: 98.7%;
+    height: 100%;
+    border-color: Black;
+    border: Solid;
+    box-shadow: 10px 10px;
+    border-radius: 10px;
+}
+
+.centeredDiv {
+    margin: Auto;
+    width: 97.5%;
+    height: 100%;
+    display: Grid;
+    column-gap: 5px;
+    border-color: Black;
+    border: Solid;
+    box-shadow: 10px 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.screenshotsDiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: Grid;
+    row-gap: 5px;
+    padding-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #A96424;
+    column-gap: 0px;
+}
+
+.powermasterScreenshotsImg {
+    width: 95%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.powermasterFeaturesA {
+    font-size: 14px;
+    color: #A96424;
+    margin-left: 50px;
+    grid-column-start: 3;
+    margin-top: 18px;
+}
+    .powermasterFeaturesA:hover {
+        color: Black;
+    }
+
+.powermasterMSIXP {
+    margin-top: 0px;
+    margin-bottom: 00px;
+    margin-left: 5px;
+    opacity: 75%;
+    font-size: 12px;
+}
+
+.powermasterDownloadsImg {
+    display: Block;
+    margin-left: Auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: Auto;
+    width: 64px;
+    height: 64px;
+}
