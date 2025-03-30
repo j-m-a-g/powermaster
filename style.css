@@ -8,14 +8,14 @@ body {
 }
 
 header {
-  display: Flex;
-  flex-direction: Row;
-  justify-content: Flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 footer {
   font-size: 13px;
-  display: Flex;
+  display: flex;
 }
 
 a {
@@ -23,13 +23,13 @@ a {
 }
 
 .powermasterHeader {
-  display: Flex;
+  display: flex;
 }
 
 .powermasterDownloadDiv {
-  display: Flex;
-  margin-top: Auto;
-  margin-bottom: Auto;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 50px;
   background-color: #A96424;
   border-radius: 10px;
@@ -52,19 +52,19 @@ a {
   }
 
 .powermasterX64DownloadA {
-  display: Flex;
+  display: flex;
   grid-column-start: 1;
   font-size: 16px;
-  background-color: Transparent;
+  background-color: transparent;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 20px;
-  color: White;
+  color: white;
   padding-left: 20px;
   border-radius: 10px;
 }
   .powermasterX64DownloadA:hover {
-      text-decoration-line: Underline;
+      text-decoration-line: underline;
   }
 
 .powermasterX64DownloadDiv {
@@ -95,7 +95,7 @@ a {
   border-radius: 10px;
 }
   .powermasterArm64DownloadA:hover {
-      text-decoration-line: Underline;
+      text-decoration-line: underline;
   }
 
 .powermasterArm64DownloadDiv {
@@ -105,19 +105,19 @@ a {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 20px;
-  color: White;
+  color: white;
   padding-left: 20px;
   border-radius: 10px;
 }
   .powermasterArm64DownloadDiv:hover {
-      background-color: Black;
+      background-color: black;
   }
 
 .powermasterLandingPageImg {
   width: 98.7%;
   height: 100%;
-  border-color: Black;
-  border: Solid;
+  border-color: black;
+  border: solid;
   box-shadow: 10px 10px;
   border-radius: 10px;
 }
@@ -128,7 +128,7 @@ a {
   height: 100%;
   display: grid;
   column-gap: 5px;
-  border-color: Black;
+  border-color: black;
   border: solid;
   box-shadow: 10px 10px;
   border-radius: 10px;
@@ -162,7 +162,7 @@ a {
   margin-top: 18px;
 }
   .powermasterFeaturesA:hover {
-      color: Black;
+      color: black;
   }
 
 .powermasterMSIXP {
@@ -174,11 +174,11 @@ a {
 }
 
 .powermasterDownloadsImg {
-  display: Block;
-  margin-left: Auto;
+  display: block;
+  margin-left: auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-right: Auto;
+  margin-right: auto;
   width: 64px;
   height: 64px;
 }
